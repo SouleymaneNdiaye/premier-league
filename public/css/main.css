@@ -5,3 +5,30 @@ body{
     bottom: 0;
     background-image: url('../img/background.jpg');
 }
+
+.by{
+    width:20%;
+    height: 50vh;
+    margin: 10px;
+    left: 19%;
+    top: 40vh;
+    position: absolute;
+}
+.for{
+
+    width:20%;
+    height: 50vh;
+    margin: 10px;
+    left: 40%;
+    top: 40vh;
+    position: absolute;
+
+}
+.at{
+    top: 40vh;
+    width:20%;
+    height: 50vh;
+    margin: 10px;
+    left:61%;
+    position: absolute;
+}

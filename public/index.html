@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <script type="application/javascript" src="js/jquery.min.js"></script>
     <script type="application/javascript" src="js/premier-league.js"></script>
+    <script type="application/javascript" src="js/scratchit.js"></script>
+    <!--<script rel="stylesheet" type="text/css" src="css/scratchit.css"></script>-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>60 Ans</title>
 </head>
 <body>
 <div class="" style="margin-top: 40vh">
 
-        <div style="border:1px solid white; width:20%; height: 50vh; margin: 10px; left: 10%;display: inline-block;" class="bye">
+        <div style=" width:20%; height: 50vh; margin: 10px; left: 10%;display: inline-block;"  class="scratchit bye">
+      </div>
 
+        <div style=" width:20%; height: 50vh; margin: 10px; left: 10%;display: inline-block;" id="scratchitBy" class="bye">
+            <img src="img/cake.webp" class="by">
+            <img  src="img/by.PNG"  class="by">
+            <canvas style="border: solid black 1px" class="by"></canvas>
         </div>
-        <div style="border:1px solid white; width:20%; height: 50vh; margin: 10px;left: 40%;display: inline-block;" class="what">
-
+        <script>
+            $(function() {
+                var $scratchit = $('#scratchitBy').scratchIt();
+            });
+        </script>
+        <div style=" width:20%; height: 50vh; margin: 10px;left: 40%;display: inline-block;" id="scratchitFor" class="what">
+            <img src="img/60.png" class="for">
+            <img  src="img/for.jpg"  class="for">
+            <canvas style="border: solid black 1px" class="for"></canvas>
+            <script>
+                $(function() {
+                    var $scratchit = $('#scratchitFor').scratchIt();
+                });
+            </script>
         </div>
-        <div style="border:1px solid white; width:20%; height: 50vh; margin: 10px;left:70%;display: inline-block;" class="where">
-
+        <div style=" width:20%; height: 50vh; margin: 10px;left:70%;display: inline-block;" id="scratchitAt" class="where">
+            <img src="img/cat.jpg" class="at">
+            <img src="img/where.jpg" class="at">
+            <canvas style="border: solid black 1px" class="at"></canvas>
+            <script>
+                $(function() {
+                    var $scratchit = $('#scratchitAt').scratchIt();
+                });
+            </script>
         </div>
 
 </div>
